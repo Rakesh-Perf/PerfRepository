@@ -1,7 +1,7 @@
 [Profile Actions]
 MercIniTreeFather=""
 MercIniTreeSectionName="Profile Actions"
-Profile Actions name=vuser_init,Action,vuser_end
+Profile Actions name=vuser_init,Action,Action_Test,vuser_end
 [RunLogicEndRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicEndRoot"
@@ -53,9 +53,9 @@ RunLogicObjectKind="Action"
 [RunLogicRunRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicRunRoot"
-MercIniTreeSons="Action"
+MercIniTreeSons="Action,Action_Test"
 Name="Run"
-RunLogicActionOrder="Action"
+RunLogicActionOrder="Action,Action_Test"
 RunLogicActionType="VuserRun"
 RunLogicNumOfIterations="1"
 RunLogicObjectKind="Group"
@@ -64,5 +64,11 @@ RunLogicRunMode="Sequential"
 MercIniTreeFather="RunLogicRunRoot"
 MercIniTreeSectionName="Action"
 Name="Action"
+RunLogicActionType="VuserRun"
+RunLogicObjectKind="Action"
+[RunLogicRunRoot:Action_Test]
+MercIniTreeFather="RunLogicRunRoot"
+MercIniTreeSectionName="Action_Test"
+Name="Action_Test"
 RunLogicActionType="VuserRun"
 RunLogicObjectKind="Action"
